@@ -1,0 +1,20 @@
+erDiagram
+  users ||--o{ courses : teaches
+  users ||--o{ enrollments : enrols
+  courses ||--o{ enrollments : has
+  courses ||--o{ lessons : contains
+  lessons ||--o{ exercises : has
+  users ||--o{ attempts : takes
+  lessons ||--o{ attempts : for
+  attempts ||--o{ attempt_answers : records
+  exercises ||--o{ attempt_answers : answers
+  courses ||--o{ assignments : has
+  assignments ||--o{ submissions : receives
+  users ||--o{ submissions : submits
+  submissions ||--o{ plagiarism_reports : flagged
+  courses ||--o{ class_sessions : schedules
+  courses ||--o{ threads : hosts
+  threads ||--o{ posts : has
+  courses ||--o{ chat_messages : has
+  users ||--o{ ai_interactions : makes
+  users ||--o{ notifications : receives

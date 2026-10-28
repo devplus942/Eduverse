@@ -1,0 +1,9 @@
+.env
+storage/uploads/*
+storage/logs/*
+!storage/uploads/.gitkeep
+!storage/logs/.gitkeep
+vendor/
+.idea/
+.vscode/
+*.log
