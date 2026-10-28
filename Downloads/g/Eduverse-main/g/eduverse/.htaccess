@@ -1,8 +1,0 @@
-# Lets XAMPP serve the app from http://localhost/eduverse/ (project folder inside htdocs).
-Options -Indexes
-RewriteEngine On
-RewriteRule ^public/ - [L]
-RewriteRule (^|/)\. - [F,L]
-RewriteRule ^(src|views|storage|database|tests|tools|docs|\.github)(/|$) - [F,L]
-RewriteRule ^$ public/ [L]
-RewriteRule ^(.*)$ public/$1 [L]
